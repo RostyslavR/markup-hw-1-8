@@ -1,0 +1,103 @@
+.preference-section {
+  padding: var(--section-padding) 0 0 0;
+}
+// .preference__item {
+//   flex-basis: var(--width-4);
+// }
+.preference__place {
+  display: flex;
+  padding: 25px 0;
+  margin-bottom: var(--item-margin);
+  justify-content: space-around;
+  background-color: var(--background-color);
+}
+.preference__icon {
+  width: 70px;
+  height: 70px;
+}
+.preference__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--header-color);
+}
+.work-section {
+  padding: var(--section-padding) 0;
+}
+.work__item {
+  position: relative;
+  // flex-basis: var(--width-3);
+}
+.work__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 28px 0px 26px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.person-section {
+  padding: var(--section-padding) 0;
+  background-color: var(--background-color);
+
+  .social__link {
+    color: #afb1b8;
+    &:hover,
+    &:focus {
+      color: var(--primary-color);
+      background-color: var(--secondary-color);
+    }
+  }
+}
+.person__item {
+  // flex-basis: var(--width-4);
+  padding-bottom: var(--item-margin);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  background: var(--primary-color);
+}
+.person__title {
+  margin-bottom: 10px;
+  padding-top: var(--item-margin);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--header-color);
+}
+.person__text {
+  margin-bottom: 16px;
+}
+.client-section {
+  padding: var(--section-padding) 0;
+}
+.client__link {
+  @extend .centered;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: color var(--tm) var(--cubic-b),
+    border-color var(--tm) var(--cubic-b);
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+}
+.client__icon {
+  width: 106px;
+  height: 60px;
+  object-position: center;
+  fill: currentColor;
+}

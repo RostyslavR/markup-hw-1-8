@@ -1,0 +1,35 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.in-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.onerow {
+  display: flex;
+  column-gap: var(--item-margin);
+}
+.manyrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--item-margin) var(--item-margin);
+}
+.to-center {
+  display: block;
+  margin: 0 auto;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

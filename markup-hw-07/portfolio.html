@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio portflio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container in-row">
+        <nav class="in-row">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo__studio">Studio</span>
+          </a>
+          <ul class="nav__list in-row">
+            <li class="item">
+              <a href="./index.html" class="nav__link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav__link current">Портфолио</a>
+            </li>
+            <li class="item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="addr__list in-row">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="addr__link">
+              <svg class="addr__icon">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="addr__link">
+              <svg class="addr__icon">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Портфолио -->
+      <section class="potfolio-section">
+        <div class="container">
+          <h1 class="visually-hidden">Проекты</h1>
+          <!-- Фильтр -->
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button type="button" class="filter__button">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="manyrow">
+            <li class="card">
+              <div class="card__overlay">
+                <img
+                  src="./images/portfolio1.jpg"
+                  alt="Технокряк"
+                  width="370"
+                />
+                <p class="card__description">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Технокряк</h2>
+                <p class="card__type">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__overlay">
+                <img
+                  src="./images/portfolio2.jpg"
+                  alt="Постер New Orlean vs Golden Star"
+                  width="370"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                <p class="card__type">Дизайн</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__overlay">
+                <img
+                  src="./images/portfolio3.jpg"
+                  alt="Ресторан Seafood"
+                  width="370"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Ресторан Seafood</h2>
+                <p class="card__type">Приложение</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__overlay">
+                <img
+                  src="./images/portfolio4.jpg"
+                  alt="Проект Prime"
+                  width="370"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Проект Prime</h2>
+                <p class="card__type">Маркетинг</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__overlay">
+                <img
+                  src="./images/portfolio5.jpg"
+                  alt="Проект Boxes"
+                  width="370"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Проект Boxes</h2>
+                <p class="card__type">Приложение</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__overlay">
+                <img
+                  src="./images/portfolio6.jpg"
+                  alt="Inspiration has no Borders"
+                  width="370"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Inspiration has no Borders</h2>
+                <p class="card__type">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__overlay">
+                <img
+                  src="./images/portfolio7.jpg"
+                  alt="Издание Limited Edition"
+                  width="370"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Издание Limited Edition</h2>
+                <p class="card__type">Дизайн</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__overlay">
+                <img
+                  src="./images/portfolio8.jpg"
+                  alt="Проект LAB"
+                  width="370"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Проект LAB</h2>
+                <p class="card__type">Маркетинг</p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__overlay">
+                <img
+                  src="./images/portfolio9.jpg"
+                  alt="Growing Business"
+                  width="370"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Growing Business</h2>
+                <p class="card__type">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container in-row">
+        <div>
+          <a href="./index.html" class="logo">
+            Web<span class="logo__studio">Studio</span>
+          </a>
+          <address>
+            <ul>
+              <li class="item">
+                <a
+                  href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="footer__link"
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="footer__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="footer__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <p class="footer__text">присоединяйтесь</p>
+          <ul class="social__list in-row">
+            <li>
+              <a href="#" class="social__link">
+                <svg class="social__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social__link">
+                <svg class="social__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social__link">
+                <svg class="social__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social__link">
+                <svg class="social__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form
+          class="footer-form"
+          name="subscribe_form"
+          autocomplete="on"
+          novalidate
+        >
+          <p class="footer__text">Подпишитесь на рассылку</p>
+          <label class="in-row">
+            <input
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              class="footer-form__mail"
+            />
+            <button class="main-button" type="submit">
+              Подписаться
+              <svg class="footer-form__icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </label>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

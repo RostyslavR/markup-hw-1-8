@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio portflio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <!-- <div class="header-content"> -->
+      <div class="container mobile-container">
+        <div class="header-content" id="mobile-menu" data-menu>
+          <nav class="nav-menu">
+            <a href="./index.html" class="logo"
+              >Web<span class="logo__studio">Studio</span>
+            </a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link current">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="address__list">
+            <li class="address__item">
+              <a href="mailto:info@devstudio.com" class="address__link">
+                <svg class="address__icon" width="14" height="10">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="address__item">
+              <a href="tel:+380961111111" class="address__link">
+                <svg class="address__icon" width="10" height="14">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">Instagram </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">Twitter </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">Facebook </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">LinkedIn </a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              width="19"
+              height="19"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu-button__icon icon--cross"
+                href="./images/icons.svg#icon-cross"
+              ></use>
+              <use
+                class="menu-button__icon icon--menu"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <main>
+      <!-- Портфолио -->
+      <section class="potfolio-section">
+        <div class="container">
+          <h1 class="visually-hidden">Проекты</h1>
+          <!-- Фильтр -->
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button type="button" class="filter__button">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="card__list">
+            <li class="card__item">
+              <div class="card__overlay">
+                <img
+                  srcset="
+                    ./images/img1_354x294.jpg 354w,
+                    ./images/img1_370x294.jpg 370w,
+                    ./images/img1_450x294.jpg 450w,
+                    ./images/img1_708x588.jpg 708w,
+                    ./images/img1_740x588.jpg 740w,
+                    ./images/img1_900x588.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px,(max-width: 320px) 320px, 100vw"
+                  src="./images/img1_354x294.jpg"
+                  alt="Технокряк"
+                />
+                <p class="card__description">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Технокряк</h2>
+                <p class="card__type">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__overlay">
+                <img
+                  srcset="
+                    ./images/img2_354x294.jpg 354w,
+                    ./images/img2_370x294.jpg 370w,
+                    ./images/img2_450x294.jpg 450w,
+                    ./images/img2_708x588.jpg 708w,
+                    ./images/img2_740x588.jpg 740w,
+                    ./images/img2_900x588.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px,(max-width: 320px) 320px, 100vw"
+                  src="./images/img2_354x294.jpg"
+                  alt="Постер New Orlean vs Golden Star"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                <p class="card__type">Дизайн</p>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__overlay">
+                <img
+                  srcset="
+                    ./images/img3_354x294.jpg 354w,
+                    ./images/img3_370x294.jpg 370w,
+                    ./images/img3_450x294.jpg 450w,
+                    ./images/img3_708x588.jpg 708w,
+                    ./images/img3_740x588.jpg 740w,
+                    ./images/img3_900x588.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px,(max-width: 320px) 320px, 100vw"
+                  src="./images/img3_354x294.jpg"
+                  alt="Ресторан Seafood"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Ресторан Seafood</h2>
+                <p class="card__type">Приложение</p>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__overlay">
+                <img
+                  srcset="
+                    ./images/img4_354x294.jpg 354w,
+                    ./images/img4_370x294.jpg 370w,
+                    ./images/img4_450x294.jpg 450w,
+                    ./images/img4_708x588.jpg 708w,
+                    ./images/img4_740x588.jpg 740w,
+                    ./images/img4_900x588.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px,(max-width: 320px) 320px, 100vw"
+                  src="./images/img4_354x294.jpg"
+                  alt="Проект Prime"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Проект Prime</h2>
+                <p class="card__type">Маркетинг</p>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__overlay">
+                <img
+                  srcset="
+                    ./images/img5_354x294.jpg 354w,
+                    ./images/img5_370x294.jpg 370w,
+                    ./images/img5_450x294.jpg 450w,
+                    ./images/img5_708x588.jpg 708w,
+                    ./images/img5_740x588.jpg 740w,
+                    ./images/img5_900x588.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px,(max-width: 320px) 320px, 100vw"
+                  src="./images/img5_354x294.jpg"
+                  alt="Проект Boxes"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Проект Boxes</h2>
+                <p class="card__type">Приложение</p>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__overlay">
+                <img
+                  srcset="
+                    ./images/img6_354x294.jpg 354w,
+                    ./images/img6_370x294.jpg 370w,
+                    ./images/img6_450x294.jpg 450w,
+                    ./images/img6_708x588.jpg 708w,
+                    ./images/img6_740x588.jpg 740w,
+                    ./images/img6_900x588.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px,(max-width: 320px) 320px, 100vw"
+                  src="./images/img6_354x294.jpg"
+                  alt="Inspiration has no Borders"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Inspiration has no Borders</h2>
+                <p class="card__type">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__overlay">
+                <img
+                  srcset="
+                    ./images/img7_354x294.jpg 354w,
+                    ./images/img7_370x294.jpg 370w,
+                    ./images/img7_450x294.jpg 450w,
+                    ./images/img7_708x588.jpg 708w,
+                    ./images/img7_740x588.jpg 740w,
+                    ./images/img7_900x588.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px,(max-width: 320px) 320px, 100vw"
+                  src="./images/img7_354x294.jpg"
+                  alt="Издание Limited Edition"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Издание Limited Edition</h2>
+                <p class="card__type">Дизайн</p>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__overlay">
+                <img
+                  srcset="
+                    ./images/img8_354x294.jpg 354w,
+                    ./images/img8_370x294.jpg 370w,
+                    ./images/img8_450x294.jpg 450w,
+                    ./images/img8_708x588.jpg 708w,
+                    ./images/img8_740x588.jpg 740w,
+                    ./images/img8_900x588.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px,(max-width: 320px) 320px, 100vw"
+                  src="./images/img8_354x294.jpg"
+                  alt="Проект LAB"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Проект LAB</h2>
+                <p class="card__type">Маркетинг</p>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__overlay">
+                <img
+                  srcset="
+                    ./images/img9_354x294.jpg 354w,
+                    ./images/img9_370x294.jpg 370w,
+                    ./images/img9_450x294.jpg 450w,
+                    ./images/img9_708x588.jpg 708w,
+                    ./images/img9_740x588.jpg 740w,
+                    ./images/img9_900x588.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px,(min-width: 480px) 450px,(max-width: 320px) 320px, 100vw"
+                  src="./images/img9_354x294.jpg"
+                  alt="Growing Business"
+                />
+                <p class="card__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+                  labore sit eum possimus explicabo ut doloribus ullam dolor
+                  aut,
+                </p>
+              </div>
+              <div class="card__text">
+                <h2 class="card__title">Growing Business</h2>
+                <p class="card__type">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="footer-box container">
+        <div class="footer__address">
+          <a href="./index.html" class="logo">
+            Web<span class="logo__studio">Studio</span>
+          </a>
+          <address>
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="address__link address__link--color"
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <p class="footer__text">присоединяйтесь</p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form
+          class="subscribe-form"
+          name="subscribe_form"
+          autocomplete="on"
+          novalidate
+        >
+          <p class="subscribe__text">Подпишитесь на рассылку</p>
+          <div class="subscribe__box">
+            <input
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              class="subscribe__mail"
+            />
+            <button type="submit" class="main-button subscribe__button">
+              Подписаться
+              <svg class="main-button__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+/*----------------------------------- common-section --------------------------------------*/
+
+.preference-section,
+.person-section,
+.client-section {
+  padding: 60px 0;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+}
+.work-section__title,
+.person-section__title,
+.client-section__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+/*----------------------------------- preference-section --------------------------------------*/
+
+/*--------------------------------- without flex for vertical --- without gap -----------------*/
+/*--------------------------------------------------------------- one vertical line ---*/
+// .person__list {
+//   $tablet-1: $tablet - 1;
+//   @media screen and (max-width: $tablet-1) {
+//     .person__item:not(:last-child) {
+//       margin-bottom: $margin;
+//     }
+//   }
+//   /*--------------------------------------------------------------------------- grid ---*/
+//   @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     .person__item {
+//       flex: 1 40%;
+//       margin-right: $margin;
+//       margin-bottom: $margin;
+//     }
+//     margin-right: -$margin;
+//     margin-bottom: -$margin;
+//   }
+//   /*------------------------------------------------------------- one horizontal line ---*/
+//   @media screen and (min-width: $desktop) {
+//     display: flex;
+//     .person__item {
+//       flex: 1 20%;
+//     }
+//     .person__item + .person__item {
+//       margin-left: $margin;
+//     }
+//   }
+// }
+/*----------------------------------------------------------------------------------------*/
+
+/*---------------------------flex is used for all devices (universal)---------------------*/
+.preference__list,
+.person__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $margin $margin;
+  .preference__item,
+  .person__item {
+    flex: 1 80%;
+  }
+  @media screen and (min-width: $tablet) {
+    .preference__item,
+    .person__item {
+      flex: 1 40%;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .preference__item,
+    .person__item {
+      flex: 1 20%;
+    }
+  }
+}
+/*------------------------------------------------------------------*/
+
+.preference__place {
+  padding: 25px 0;
+  margin-bottom: $margin;
+  background-color: var(--background-color);
+}
+.preference__icon {
+  display: block;
+  margin: 0 auto;
+}
+.preference__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--header-color);
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+}
+.preference__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/*----------------------------------- work-section --------------------------------------*/
+.work-section {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: unset;
+    .work__list {
+      display: flex;
+      column-gap: $margin;
+    }
+  }
+}
+.work__item {
+  position: relative;
+}
+.work__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 24%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+/*----------------------------------- person-section --------------------------------------*/
+.person-section {
+  padding-bottom: 94px;
+  background-color: var(--background-color);
+  .social__link {
+    color: #afb1b8;
+    &:hover,
+    &:focus {
+      color: var(--primary-color);
+      background-color: var(--secondary-color);
+    }
+  }
+}
+.person__item {
+  text-align: center;
+  padding-bottom: $margin;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--primary-color);
+}
+.person__title {
+  margin-bottom: 10px;
+  padding-top: $margin;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+}
+.person__text {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.social__list {
+  margin: 0 auto;
+}
+
+/*----------------------------------- client-section --------------------------------------*/
+.client__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $margin $margin;
+  .client__item {
+    flex: 1 40%;
+  }
+  @media screen and (min-width: $tablet) {
+    .client__item {
+      flex: 1 30%;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .client__item {
+      flex: 1 13%;
+    }
+  }
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: color $tm $cubic, border-color $tm $cubic;
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+}

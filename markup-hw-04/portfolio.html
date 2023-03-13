@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio portflio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-container container">
+        <nav class="nav-container">
+          <a href="./index.html" class="logo link">Web<span class="studio-header link">Studio</span> </a>
+          <ul class="nav-list list">
+            <li class="item">
+              <a href="./index.html" class="nav-link link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav-link link">Портфолио</a>
+            </li>
+            <li class="item"><a href="#" class="nav-link link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="address-list list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="address-link link">
+              <svg class="address-icon">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="address-link link">
+              <svg class="address-icon">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Портфолио -->
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Проекты</h1>
+          <!-- Фильтр -->
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <button type="button" class="button-item">Все</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button-item">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button-item">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button-item">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button-item">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portfolio-list flex-list list">
+            <li class="portfolio-item">
+              <img src="./images/portfolio1.jpg" alt="Технокряк" width="370" />
+              <div class="card-text">
+                <h2 class="portfolio-title">Технокряк</h2>
+                <p class="portfolio-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img src="./images/portfolio2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+              <div class="card-text">
+                <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370" />
+              <div class="card-text">
+                <h2 class="portfolio-title">Ресторан Seafood</h2>
+                <p class="portfolio-text">Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img src="./images/portfolio4.jpg" alt="Проект Prime" width="370" />
+              <div class="card-text">
+                <h2 class="portfolio-title">Проект Prime</h2>
+                <p class="portfolio-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img src="./images/portfolio5.jpg" alt="Проект Boxes" width="370" />
+              <div class="card-text">
+                <h2 class="portfolio-title">Проект Boxes</h2>
+                <p class="portfolio-text">Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370" />
+              <div class="card-text">
+                <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                <p class="portfolio-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img src="./images/portfolio7.jpg" alt="Издание Limited Edition" width="370" />
+              <div class="card-text">
+                <h2 class="portfolio-title">Издание Limited Edition</h2>
+                <p class="portfolio-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img src="./images/portfolio8.jpg" alt="Проект LAB" width="370" />
+              <div class="card-text">
+                <h2 class="portfolio-title">Проект LAB</h2>
+                <p class="portfolio-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img src="./images/portfolio9.jpg" alt="Growing Business" width="370" />
+              <div class="card-text">
+                <h2 class="portfolio-title">Growing Business</h2>
+                <p class="portfolio-text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer section">
+      <div class="container">
+        <div class="footer-flex">
+          <div class="footer-addr-place">
+            <a href="./index.html" class="logo link"> Web<span class="studio-footer link">Studio</span> </a>
+            <address class="footer-address">
+              <ul class="footer-list list">
+                <li class="item">
+                  <a
+                    href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="addr-link link"
+                    >г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="mailto:info@devstudio.com" class="mail-link link">info@devstudio.com</a>
+                </li>
+                <li class="item">
+                  <a href="tel:+380961111111" class="tel-link link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-place">
+            <p class="footer-social-text">присоединяйтесь</p>
+            <ul class="flex-list list">
+              <li>
+                <a href="#" class="footer-social-link">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-social-link">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-social-link">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-social-link">
+                  <svg class="social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

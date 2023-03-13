@@ -1,0 +1,28 @@
+:root {
+  /* primary color white */
+  --primary-color: #ffffff;
+  /* secondary color blue */
+  --secondary-color: #2196f3;
+  /* header color black */
+  --header-color: #212121;
+  /* text color black */
+  --text-color: #757575;
+
+  /* hero background color */
+  --hero-bg-color: #2f303a;
+  /* background color */
+  --background-color: #f5f4fa;
+  /* futer background color */
+  --footer-bg-color: #2f303a;
+  /* mail-link color */
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+}
+$margin: 30px;
+$scrollbar: 15px;
+$minwidth: 320px;
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+$tm: 250ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$hero-overlay: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));

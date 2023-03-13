@@ -1,0 +1,119 @@
+.potfolio-section {
+  padding: 60px 0;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+}
+.filter__list {
+  display: flex;
+  margin-bottom: 40px;
+  column-gap: 8px;
+  @media screen and (max-width: ($tablet - 1)) {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+.filter__button {
+  display: block;
+  padding: 0 22px;
+  height: 38px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color $tm $cubic, background-color $tm $cubic,
+    box-shadow $tm $cubic;
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $margin $margin;
+}
+.card__item {
+  flex: 1 80%;
+  background-color: var(--primary-color);
+  box-shadow: inset 0px 0px 0px 1px #eeeeee;
+  transition: box-shadow $tm $cubic;
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 0px 0px 1px #eeeeee, 0px 1px 1px rgba(0, 0, 0, 0.12),
+      0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    & .card__description {
+      transform: translateY(0);
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+    flex: 1 40%;
+    &:last-child {
+      flex: 0 1 ($tablet / 2) - ($margin * 1.25);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    flex: 1 30%;
+  }
+}
+.card__overlay {
+  position: relative;
+  overflow: hidden;
+}
+.card__text {
+  padding: 20px 24px;
+  // border-right: 1px solid #eeeeee;
+  // border-bottom: 1px solid #eeeeee;
+  // border-left: 1px solid #eeeeee;
+  .card__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--header-color);
+  }
+  .card__type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
+}
+.card__description {
+  width: 100%;
+  height: 100%;
+  padding: 77px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform $tm $cubic;
+  @media screen and (min-width: $tablet) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 63px 24px;
+  }
+}

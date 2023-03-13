@@ -1,0 +1,37 @@
+:root {
+  /* page width */
+  --page-width: 1200px;
+  /* item margin */
+  --item-margin: 30px;
+  /* section title margin */
+  --section-title-margin: 50px;
+  /* section padding */
+  --section-padding: 94px;
+
+  /* width for 3 items in line */
+  // --width-3: calc(var(--page-width) / 3 - var(--item-margin));
+  /* width for 4 items in line */
+  // --width-4: calc(var(--page-width) / 4 - var(--item-margin));
+  /* transition-duration */
+  --tm: 250ms;
+  /* transition-timing-function */
+  --cubic-b: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* primary color white */
+  --primary-color: #ffffff;
+  /* secondary color blue */
+  --secondary-color: #2196f3;
+  /* header color black */
+  --header-color: #212121;
+  /* text color black */
+  --text-color: #757575;
+
+  /* hero background color */
+  --hero-bg-color: #2f303a;
+  /* background color */
+  --background-color: #f5f4fa;
+  /* futer background color */
+  --footer-bg-color: #2f303a;
+  /* mail-link color */
+  --mail-link-color: rgba(255, 255, 255, 0.6);
+}
